@@ -11,7 +11,7 @@ namespace DatingApp.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ValuesController : Controller
+    public class ValuesController : ControllerBase
     {
         private readonly DataContext _context;
 
