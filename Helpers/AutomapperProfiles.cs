@@ -22,7 +22,7 @@ namespace DatingApp.Helpers
                 src.DateOfBirth.CalculateAge()));
 
             CreateMap<User, UserForDetailedDto>()
-                .ForMember(dest => dest.PhotoUrl, opt =>
+             .ForMember(dest => dest.PhotoUrl, opt =>
                 opt.MapFrom(src =>
                 src.Photos.FirstOrDefault(p => p.IsMain).Url))
 

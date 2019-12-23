@@ -12,8 +12,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace DatingApp.Controllers
 {
     [Authorize]
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class UsersController : ControllerBase
     {
         private readonly IDatingRepository _repo;
