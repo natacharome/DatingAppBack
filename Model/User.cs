@@ -23,5 +23,10 @@ namespace DatingApp.Model
         public string City { get; set; }
         public string Country { get; set; }
         public ICollection<Photo> Photos { get; set; }
+
+        internal static object FindFirst(string nameIdentifier)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
